@@ -1,0 +1,77 @@
+:root{
+    --1-background-color: #4C86F9;
+    --2-background-color: #49A84C;
+    --3-background-color: #F6BC00;
+    --4-background-color: #E1432E;
+}
+
+img{
+    background-color: #49A84C;
+    border: 1px solid black;
+}
+
+.blue{
+    color: var(--1-background-color);
+}
+
+.green{
+    color: var(--2-background-color);
+}
+
+.yellow{
+    color: #F6BC00;
+}
+
+.red{
+    color: #E1432E;
+}
+
+h1{
+    font: 80px "Product Sans", sans-serif;
+    font-weight:700;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.color{
+    height: 23px;
+    width: 23px;
+    border-radius: 25px;
+    margin: 5px 5px;
+    animation: 2s loading ease-in-out infinite;
+}
+
+
+.one{
+    background-color: var(--1-background-color);
+    margin-left: 20px !important;
+}
+
+.two{
+    background-color: var(--2-background-color);
+    animation-delay: .25s;
+}
+
+.three{
+    background-color: var(--3-background-color);
+    animation-delay: .5s;
+}
+
+.four{
+    background-color: var(--4-background-color);
+    animation-delay: .75s;
+}
+
+@keyframes loading{
+
+    50%{
+        transform: translateY(20px);
+    }
+
+}
+
